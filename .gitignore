@@ -1,2 +1,41 @@
+# Các file và thư mục của Node.js
 node_modules/
-/.next
+package-lock.json
+yarn.lock
+
+# Thư mục build của Next.js
+.next/
+out/
+
+# Các file cấu hình môi trường
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Các file log
+*.log
+
+# Các file tạm thời của IDE
+.idea/
+.vscode/
+*.swp
+
+# Các file build khác (nếu có)
+build/
+dist/
+
+# Thư mục cache (nếu có)
+.cache/
+
+# Các file lớn (nếu có)
+*.pdf
+*.zip
+*.rar
+
+# Thư mục chứa các file upload (nếu có)
+uploads/
+
+# Thư mục chứa các file media (nếu có)
+media/
