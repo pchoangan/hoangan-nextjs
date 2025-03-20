@@ -1,41 +1,38 @@
-# Các file và thư mục của Node.js
-node_modules/
-package-lock.json
-yarn.lock
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Thư mục build của Next.js
+# dependencies
+node_modules
+.pnp
+.pnp.js
+
+# testing
+coverage
+
+# next.js
 .next/
 out/
+build
 
-# Các file cấu hình môi trường
-.env
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env files
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-# Các file log
-*.log
+# turbo
+.turbo
 
-# Các file tạm thời của IDE
-.idea/
-.vscode/
-*.swp
-
-# Các file build khác (nếu có)
-build/
-dist/
-
-# Thư mục cache (nếu có)
-.cache/
-
-# Các file lớn (nếu có)
-*.pdf
-*.zip
-*.rar
-
-# Thư mục chứa các file upload (nếu có)
-uploads/
-
-# Thư mục chứa các file media (nếu có)
-media/
+.env
+.vercel
+.vscode
+.env*.local
