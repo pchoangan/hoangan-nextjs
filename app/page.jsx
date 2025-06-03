@@ -1,7 +1,7 @@
 // app/page.js
 // Đây là một Server Component theo mặc định
 async function getData() {
-  const res = await fetch('https://api.example.com/data');
+  const res = await fetch('https://script.google.com/macros/s/AKfycbxGGPAp9NDCHtOVdPHfAnnxBbjB9TSGpJeyB1QPsNlbmpD3FYxuG3cx3auIr9bOFFnl/exec');
   if (!res.ok) {
     throw new Error('Failed to fetch data');
   }
