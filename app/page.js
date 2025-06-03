@@ -1,5 +1,3 @@
-"use client";
-import React, { useState, useEffect } from "react";
 
 async function getData() {
   const res = await fetch('https://script.google.com/macros/s/AKfycbxGGPAp9NDCHtOVdPHfAnnxBbjB9TSGpJeyB1QPsNlbmpD3FYxuG3cx3auIr9bOFFnl/exec');
@@ -8,6 +6,9 @@ async function getData() {
   }
   return res.json();
 }
+
+"use client";
+import React, { useState, useEffect } from "react";
 
 export default function HomePage() { // Bỏ async ở đây
   const [dataTable, setDataTable] = useState([]);
