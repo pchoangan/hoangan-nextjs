@@ -13,7 +13,7 @@ export default async function HomePage() {
   return (
     <main>
       <h1>Welcome to the Home Page</h1>
-      <p>Data from server: </p>
+      <p>Data from server:{JSON.stringify(data)||"ok"} </p>
     </main>
   );
 }
