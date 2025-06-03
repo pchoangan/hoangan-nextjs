@@ -11,7 +11,7 @@ async function getData() {
 export default async function HomePage() {
   const [dataTable, setDataTable] = useState([]);
   useEffect(() => {
-    const data = await getData(); // Fetch dữ liệu trên server
+    const data = getData(); // Fetch dữ liệu trên server
     setDataTable(data);
   }, []);
   
