@@ -1,12 +1,4 @@
 
-async function getData() {
-  const res = await fetch('https://script.google.com/macros/s/AKfycbxGGPAp9NDCHtOVdPHfAnnxBbjB9TSGpJeyB1QPsNlbmpD3FYxuG3cx3auIr9bOFFnl/exec');
-  if (!res.ok) {
-    throw new Error('Failed to fetch data');
-  }
-  return res.json();
-}
-
 "use client";
 import React, { useState, useEffect } from "react";
 
@@ -19,8 +11,8 @@ export default function HomePage() { // Bỏ async ở đây
     async function fetchData() {
       try {
         setLoading(true); // Bắt đầu loading
-        const data = await getData(); // Fetch dữ liệu trên client
-        setDataTable(data);
+        const data = await fetch('https://script.google.com/macros/s/AKfycbxGGPAp9NDCHtOVdPHfAnnxBbjB9TSGpJeyB1QPsNlbmpD3FYxuG3cx3auIr9bOFFnl/exec');
+        setDataTable(data.json());
         setError(null); // Xóa lỗi nếu fetch thành công
       } catch (err) {
         console.error(err); // Log lỗi ra console
