@@ -1,6 +1,6 @@
 
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 
 export default function HomePage() { 
   const [dataTable, setDataTable] = useState([]);  
@@ -21,7 +21,9 @@ export default function HomePage() {
   return (
     <main>
       <h1>Welcome to the Home Page</h1>
+      <Suspense fallback={<div>Loading...</div>}>
       <p>Data from server: {JSON.stringify(dataTable, null, 2) || "No data"} </p> 
+      </Suspense>
     </main>
   );
 }
