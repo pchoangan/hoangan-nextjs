@@ -22,7 +22,7 @@ export default function HomePage() {
     <main>
       <h1>Welcome to the Home Page</h1>
       <Suspense fallback={<div>Loading...</div>}>
-      <p>Data from server: {dataTable&&JSON.stringify(dataTable, null, 2)} </p> 
+      {dataTable}&&<p>Data from server: {JSON.stringify(dataTable, null, 2)} </p> 
       </Suspense>
     </main>
   );
